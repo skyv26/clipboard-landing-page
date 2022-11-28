@@ -22,6 +22,14 @@ const theme = extendTheme({
       },
     },
   },
+  colors: {
+    primary: {
+      900: 'hsla(210, 10%, 33%, 1)',
+    },
+    secondary: {
+      900: 'hsla(201, 11%, 66%, 1)',
+    },
+  },
 });
 
 const helmetContext = {};
