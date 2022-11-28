@@ -12,7 +12,7 @@ const data = {
 function AccessSection() {
   const { heading, description } = data;
   return (
-    <Box as="section">
+    <Box as="section" padding={['16px']}>
       <TextDescription heading={heading} description={description} buttonRequired={false} semanticTag="h2" />
     </Box>
   );

@@ -10,7 +10,7 @@ const data = {
 function CTASection() {
   const { heading, description } = data;
   return (
-    <Box as="header">
+    <Box as="section" padding={['16px']}>
       <TextDescription heading={heading} description={description} />
     </Box>
   );

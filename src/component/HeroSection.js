@@ -11,7 +11,7 @@ const data = {
 function HeroSection() {
   const { heading, description } = data;
   return (
-    <Box as="header">
+    <Box as="header" padding={['16px']}>
       <Logo />
       <TextDescription heading={heading} description={description} />
     </Box>

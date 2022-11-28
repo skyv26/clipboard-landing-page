@@ -29,7 +29,7 @@ const featureList = [
 function FeatureSection() {
   const { heading, description } = data;
   return (
-    <Box as="section">
+    <Box as="section" padding={['16px']}>
       <TextDescription
         heading={heading}
         description={description}

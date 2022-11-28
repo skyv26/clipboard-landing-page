@@ -35,7 +35,7 @@ function WorkflowSection() {
   ];
 
   return (
-    <Box as="section">
+    <Box as="section" padding={['16px']}>
       <TextDescription
         heading={heading}
         description={description}

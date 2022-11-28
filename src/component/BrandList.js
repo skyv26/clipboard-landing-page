@@ -8,7 +8,7 @@ import VectorGraphics from '../svg_components/VectorGraphics';
 
 function BrandList() {
   return (
-    <Box>
+    <Box as="section" padding={['16px']}>
       <UnorderedList>
         <List>
           <GoogleIcon />
