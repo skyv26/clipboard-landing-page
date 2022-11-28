@@ -1,5 +1,6 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import ReactDOM from 'react-dom/client';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import App from './App';
 
 const breakpoints = {
@@ -12,10 +13,28 @@ const breakpoints = {
   '3xl': '1536px',
 };
 
-const theme = extendTheme({ breakpoints });
+const theme = extendTheme({
+  breakpoints,
+  styles: {
+    global: {
+      body: {
+        fontFamily: 'Bai Jamjuree, sans-serif',
+      },
+    },
+  },
+});
+
+const helmetContext = {};
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ChakraProvider theme={theme}>
-    <App />
-  </ChakraProvider>,
+  <HelmetProvider context={helmetContext}>
+    <ChakraProvider theme={theme}>
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+      </Helmet>
+      <App />
+    </ChakraProvider>
+  </HelmetProvider>,
 );
