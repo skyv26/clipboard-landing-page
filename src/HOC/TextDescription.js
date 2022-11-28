@@ -4,16 +4,17 @@ import PropTypes from 'prop-types';
 
 const TextDescription = ({
   heading, description, semanticTag, buttonRequired,
+  headingWeight, descriptionWeight, buttonWeight,
 }) => (
   <>
-    <Text as={semanticTag}>{ heading }</Text>
-    <Text as="p">{ description }</Text>
+    <Text fontWeight={headingWeight} as={semanticTag}>{ heading }</Text>
+    <Text fontWeight={descriptionWeight} as="p">{ description }</Text>
     { buttonRequired && (
       <Box>
-        <CallToActionButton>
+        <CallToActionButton fontWeight={buttonWeight}>
           Download for iOS
         </CallToActionButton>
-        <CallToActionButton>
+        <CallToActionButton fontWeight={buttonWeight}>
           Download for Mac
         </CallToActionButton>
       </Box>
@@ -24,6 +25,9 @@ const TextDescription = ({
 TextDescription.defaultProps = {
   heading: '',
   description: '',
+  descriptionWeight: '',
+  headingWeight: '',
+  buttonWeight: '',
   buttonRequired: true,
   semanticTag: 'h1',
 };
@@ -31,6 +35,9 @@ TextDescription.defaultProps = {
 TextDescription.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
+  headingWeight: PropTypes.string,
+  descriptionWeight: PropTypes.string,
+  buttonWeight: PropTypes.string,
   buttonRequired: PropTypes.bool,
   semanticTag: PropTypes.string,
 };
