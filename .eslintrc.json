@@ -7,12 +7,25 @@
     },
     // Specify the parser (babel-eslint for ES6)
     "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+      },
     // Extend recommended configurations
     "extends": ["eslint:recommended", "plugin:prettier/recommended"],
     // Define custom rules
     "rules": {
-      // Add your custom ESLint rules here
-      // Example: 'no-console': 'off' to allow console.log
-    }
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "import/no-unresolved": "off",
+        "no-shadow": "off"
+    },
+    "ignorePatterns": [
+        "dist/",
+        "build/"
+      ]
   }
   

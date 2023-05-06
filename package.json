@@ -23,13 +23,17 @@
     "@babel/plugin-syntax-jsx": "7.x",
     "@babel/preset-env": "7.x",
     "@babel/preset-react": "7.x",
+    "babel-eslint": "^10.1.0",
     "eslint": "7.x",
     "eslint-config-airbnb": "18.x",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "parcel": "^2.9.3",
+    "prettier": "^3.0.3",
     "process": "^0.11.10"
   }
 }
