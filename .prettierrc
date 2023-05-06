@@ -1,8 +1,7 @@
 {
-    "singleQuote": false,
+    "singleQuote": true,
     "semi": true,
     "trailingComma": "all",
     "printWidth": 80
-    // Add other Prettier configuration options as needed
   }
   
