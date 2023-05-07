@@ -8,7 +8,9 @@
   "scripts": {
     "start": "parcel ./public/index.html",
     "build": "parcel build",
-    "test": "jest"
+    "test": "jest",
+    "lint": "npx eslint .",
+    "deploy": "gh-pages -d dist/"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
