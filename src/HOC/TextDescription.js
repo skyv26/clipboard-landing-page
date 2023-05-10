@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-const CTA = ({ heading, description, semanticTag, buttonRequired }) => {
+const TextDescription = ({ heading, description, semanticTag, buttonRequired }) => {
   return (
     <>
     <Text as={semanticTag}>{ heading }</Text>
@@ -21,18 +21,18 @@ const CTA = ({ heading, description, semanticTag, buttonRequired }) => {
   );
 };
 
-CTA.defaultProps = {
+TextDescription.defaultProps = {
     heading: '',
     description: '',
     buttonRequired: true,
     semanticTag: 'h1'
 };
 
-CTA.propTypes = {
+TextDescription.propTypes = {
     heading: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     buttonRequired: PropTypes.bool,
     semanticTag: PropTypes.string.isRequired,
 };
 
-export default CTA;
+export default TextDescription;
