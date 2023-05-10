@@ -1,11 +1,13 @@
-import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
 import React from 'react'
+import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
-const CTA = ({ heading, description }) => {
+const CTA = ({ heading, description, semanticTag, buttonRequired }) => {
   return (
     <>
-    <Text as="h1">{ heading }</Text>
+    <Text as={semanticTag}>{ heading }</Text>
       <Text as="p">{ description }</Text>
+      { buttonRequired && (
       <Box>
         <CallToActionButton>
           Download for iOS
@@ -14,8 +16,23 @@ const CTA = ({ heading, description }) => {
           Download for Mac
         </CallToActionButton>
       </Box>
+      )};
     </>
   );
+};
+
+CTA.defaultProps = {
+    heading: '',
+    description: '',
+    buttonRequired: true,
+    semanticTag: 'h1'
+};
+
+CTA.propTypes = {
+    heading: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    buttonRequired: PropTypes.bool,
+    semanticTag: PropTypes.string.isRequired,
 };
 
 export default CTA;
