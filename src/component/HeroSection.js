@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <Box as="section">
       <Logo />
-      <CTA heading description />
+      <CTA heading={heading} description={description} />
     </Box>
   )
 };
