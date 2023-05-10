@@ -1,8 +1,11 @@
 import React from 'react'
+import { Box } from '@chakra-ui/react';
 
 const HeroSection = () => {
   return (
-    <div>HeroSection</div>
+    <Box as="section">
+
+    </Box>
   )
 };
 
