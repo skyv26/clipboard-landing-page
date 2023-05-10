@@ -1,8 +1,14 @@
 import React from 'react'
+import { Box } from '@chakra-ui/react';
+import CTA from '../HOC/TextDescription';
 
 const FeatureSection = () => {
   return (
-    <div>FeatureSection</div>
+    <Box as="section">
+        <Box>
+
+        </Box>
+    </Box>
   );
 };
 
