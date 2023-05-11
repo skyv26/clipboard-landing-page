@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, UnorderedList, List } from '@chakra-ui/react';
+import { Box, UnorderedList, List } from '@chakra-ui/react';
 import TextDescription from '../HOC/TextDescription';
 import FeatureImage from '../svg_components/FeatureImage';
 
@@ -41,7 +41,9 @@ const FeatureSection = () => {
       </Box>
       <UnorderedList>
         {featureList.map((item, index) => (
-            <TextDescription key={index} heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
+            <List key={index}>
+              <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
+            </List>
           ))}
       </UnorderedList>
     </Box>
