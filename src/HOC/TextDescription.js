@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const TextDescription = ({ heading, description, semanticTag, buttonRequired }) => {
   return (
     <>
-    <Text as={semanticTag}>{ heading }</Text>
+      <Text as={semanticTag}>{ heading }</Text>
       <Text as="p">{ description }</Text>
       { buttonRequired && (
       <Box>
@@ -16,7 +16,7 @@ const TextDescription = ({ heading, description, semanticTag, buttonRequired }) 
           Download for Mac
         </CallToActionButton>
       </Box>
-      )};
+      )}
     </>
   );
 };
