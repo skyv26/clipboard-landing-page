@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react';
-import CTA from '../HOC/TextDescription';
+import TextDescription from '../HOC/TextDescription';
 import Logo from '../svg_components/Logo';
 
 const data = {
@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <Box as="section">
       <Logo />
-      <CTA heading={heading} description={description} />
+      <TextDescription heading={heading} description={description} />
     </Box>
   )
 };
