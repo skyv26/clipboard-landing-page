@@ -1,9 +1,14 @@
 import React from 'react';
+import { Box } from '@chakra-ui/react';
 import HeroSection from './component/HeroSection';
+import FeatureSection from './component/FeatureSection';
 
 const App = () => {
     return (
-        <HeroSection />
+        <Box as="main">
+            <HeroSection />
+            <FeatureSection />
+        </Box>
     );
 };
 
