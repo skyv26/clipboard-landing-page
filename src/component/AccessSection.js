@@ -1,8 +1,20 @@
 import React from 'react'
+import { Box } from '@chakra-ui/react';
+import TextDescription from '../HOC/TextDescription';
+
+const data = {
+  heading: 'Access Clipboard anywhere',
+  description:
+    'Whether you\'re on the go, or at your computer, you can access all your Clipboard\
+    snippets in a few simple clicks.',
+};
 
 const AccessSection = () => {
+  const { heading, description } = data;
   return (
-    <div>AccessSection</div>
+    <Box as='section'>
+      <TextDescription heading={heading} description={description} buttonRequired={false} semanticTag='h2' />
+    </Box>
   );
 };
 
