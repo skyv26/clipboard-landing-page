@@ -49,7 +49,7 @@ const FeatureImage = ({ className }) => {
                 r="0.625"
                 transform="matrix(1 0 0 -1 368.4 21.5)"
                 fill="url(#paint1_linear_9_143)"
-                shape-rendering="crispEdges"
+                shapeRendering="crispEdges"
               />
             </g>
           </g>
@@ -57,7 +57,7 @@ const FeatureImage = ({ className }) => {
             <circle cx="376.5" cy="21.9" r="0.5" fill="#109FEE" />
           </g>
         </g>
-        <g id="Apple_logo_grey 2" clip-path="url(#clip0_9_143)">
+        <g id="Apple_logo_grey 2" clipPath="url(#clip0_9_143)">
           <path
             id="Vector"
             d="M382.217 450.469C381.975 451.028 381.688 451.542 381.355 452.015C380.902 452.66 380.531 453.107 380.245 453.355C379.802 453.762 379.327 453.97 378.819 453.982C378.454 453.982 378.014 453.878 377.501 453.668C376.987 453.458 376.514 453.355 376.082 453.355C375.629 453.355 375.143 453.458 374.624 453.668C374.103 453.878 373.684 453.988 373.363 453.999C372.875 454.019 372.389 453.805 371.904 453.355C371.595 453.085 371.207 452.623 370.743 451.968C370.245 451.269 369.836 450.458 369.516 449.534C369.172 448.535 369 447.568 369 446.632C369 445.56 369.232 444.635 369.697 443.86C370.062 443.238 370.548 442.747 371.157 442.386C371.765 442.026 372.422 441.842 373.13 441.83C373.517 441.83 374.025 441.95 374.657 442.185C375.286 442.421 375.69 442.54 375.867 442.54C376 442.54 376.449 442.4 377.21 442.122C377.929 441.863 378.537 441.756 379.034 441.798C380.383 441.907 381.396 442.437 382.07 443.393C380.864 444.123 380.267 445.145 380.279 446.455C380.29 447.476 380.661 448.326 381.39 449C381.72 449.313 382.089 449.555 382.5 449.727C382.411 449.985 382.317 450.232 382.217 450.469ZM379.125 438.32C379.125 439.12 378.832 439.867 378.248 440.559C377.544 441.381 376.692 441.856 375.768 441.781C375.756 441.685 375.749 441.584 375.749 441.478C375.749 440.71 376.084 439.888 376.679 439.215C376.976 438.875 377.354 438.592 377.812 438.366C378.269 438.144 378.701 438.021 379.108 438C379.12 438.107 379.125 438.214 379.125 438.32Z"
@@ -84,9 +84,9 @@ const FeatureImage = ({ className }) => {
           width="11"
           height="11"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -137,9 +137,9 @@ const FeatureImage = ({ className }) => {
           width="41.25"
           height="41.25"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -178,9 +178,9 @@ const FeatureImage = ({ className }) => {
           width="3"
           height="3"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -215,7 +215,7 @@ const FeatureImage = ({ className }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.0677083" />
-          <stop offset="1" stop-color="#393A3B" />
+          <stop offset="1" stopColor="#393A3B" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_9_143"
@@ -225,8 +225,8 @@ const FeatureImage = ({ className }) => {
           y2="1.25"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0.11" />
-          <stop offset="1" stop-color="#3A3A3A" />
+          <stop stopOpacity="0.11" />
+          <stop offset="1" stopColor="#3A3A3A" />
         </linearGradient>
         <image
           id="image0_9_143"
