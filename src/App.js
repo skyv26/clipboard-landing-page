@@ -4,6 +4,7 @@ import HeroSection from './component/HeroSection';
 import FeatureSection from './component/FeatureSection';
 import AccessSection from './component/AccessSection';
 import WorkflowSection from './component/WorkflowSection';
+import BrandList from './component/BrandList';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <FeatureSection />
             <AccessSection />
             <WorkflowSection />
+            <BrandList />
         </Box>
     );
 };
