@@ -5,16 +5,20 @@ import FeatureSection from './component/FeatureSection';
 import AccessSection from './component/AccessSection';
 import WorkflowSection from './component/WorkflowSection';
 import BrandList from './component/BrandList';
+import CTASection from './component/CTASection';
 
 const App = () => {
     return (
+        <>
+        <HeroSection />
         <Box as="main">
-            <HeroSection />
             <FeatureSection />
             <AccessSection />
             <WorkflowSection />
             <BrandList />
+            <CTASection />
         </Box>
+        </>
     );
 };
 
