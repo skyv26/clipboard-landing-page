@@ -11,7 +11,7 @@ const data = {
 const HeroSection = () => {
   const { heading, description } = data;
   return (
-    <Box as="section">
+    <Box as="header">
       <Logo />
       <TextDescription heading={heading} description={description} />
     </Box>
