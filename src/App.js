@@ -8,18 +8,18 @@ import BrandList from './component/BrandList';
 import CTASection from './component/CTASection';
 
 const App = () => {
-    return (
-        <>
-        <HeroSection />
-        <Box as="main">
-            <FeatureSection />
-            <AccessSection />
-            <WorkflowSection />
-            <BrandList />
-            <CTASection />
-        </Box>
-        </>
-    );
+  return (
+    <>
+      <HeroSection />
+      <Box as="main">
+        <FeatureSection />
+        <AccessSection />
+        <WorkflowSection />
+        <BrandList />
+        <CTASection />
+      </Box>
+    </>
+  );
 };
 
 export default App;
