@@ -14,8 +14,11 @@
         "react/react-in-jsx-scope": "off",
         "import/no-unresolved": "off",
         "no-shadow": "off",
-        "react/function-component-definition": ["error"]
-
+        "react/function-component-definition": ["error", {
+            "namedComponents": ["function-declaration", "arrow-function"],
+            "unnamedComponents": "function-expression"
+          }
+        ]
     },
     "ignorePatterns": [
         "dist/",

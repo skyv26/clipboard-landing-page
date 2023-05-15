@@ -13,29 +13,29 @@ function Footer() {
       <Logo />
       <Grid>
         <GridItem>
-          <Link>FAQs</Link>
+          <Link href=".">FAQs</Link>
         </GridItem>
         <GridItem>
-          <Link>Contact Us</Link>
+          <Link href=".">Contact Us</Link>
         </GridItem>
         <GridItem>
-          <Link>Privacy Policy</Link>
+          <Link href=".">Privacy Policy</Link>
         </GridItem>
         <GridItem>
-          <Link>Press Kit</Link>
+          <Link href=".">Press Kit</Link>
         </GridItem>
         <GridItem>
-          <Link>Install Guide</Link>
+          <Link href=".">Install Guide</Link>
         </GridItem>
       </Grid>
       <HStack>
-        <Link>
+        <Link href=".">
           <FbIcon />
         </Link>
-        <Link>
+        <Link href=".">
           <InstaIcon />
         </Link>
-        <Link>
+        <Link href=".">
           <TwitterIcon />
         </Link>
       </HStack>

@@ -6,9 +6,9 @@ import FeatureImage from '../svg_components/FeatureImage';
 const data = {
   heading: 'Keep track of your snippets',
   description:
-    'Clipboard instantly stores any item you copy in the cloud,\
-    meaning you can access your snippets immediately on all your\
-    devices. Our Mac and iOS apps will help you organize everything.',
+    'Clipboard instantly stores any item you copy in the cloud,'
+    + 'meaning you can access your snippets immediately on all your'
+    + 'devices. Our Mac and iOS apps will help you organize everything.',
 };
 
 const featureList = [
@@ -40,8 +40,8 @@ function FeatureSection() {
         <FeatureImage />
       </Box>
       <UnorderedList>
-        {featureList.map((item, index) => (
-          <List key={index}>
+        {featureList.map((item) => (
+          <List key={item.title}>
             <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
           </List>
         ))}

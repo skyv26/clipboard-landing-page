@@ -2,14 +2,13 @@ import React from 'react';
 import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-function TextDescription({
+const TextDescription = ({
   heading, description, semanticTag, buttonRequired,
-}) {
-  return (
-    <>
-      <Text as={semanticTag}>{ heading }</Text>
-      <Text as="p">{ description }</Text>
-      { buttonRequired && (
+}) => (
+  <>
+    <Text as={semanticTag}>{ heading }</Text>
+    <Text as="p">{ description }</Text>
+    { buttonRequired && (
       <Box>
         <CallToActionButton>
           Download for iOS
@@ -18,10 +17,9 @@ function TextDescription({
           Download for Mac
         </CallToActionButton>
       </Box>
-      )}
-    </>
-  );
-}
+    )}
+  </>
+);
 
 TextDescription.defaultProps = {
   heading: '',
@@ -31,10 +29,10 @@ TextDescription.defaultProps = {
 };
 
 TextDescription.propTypes = {
-  heading: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  heading: PropTypes.string,
+  description: PropTypes.string,
   buttonRequired: PropTypes.bool,
-  semanticTag: PropTypes.string.isRequired,
+  semanticTag: PropTypes.string,
 };
 
 export default TextDescription;

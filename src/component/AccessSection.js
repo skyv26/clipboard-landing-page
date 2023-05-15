@@ -5,8 +5,8 @@ import TextDescription from '../HOC/TextDescription';
 const data = {
   heading: 'Access Clipboard anywhere',
   description:
-    'Whether you\'re on the go, or at your computer, you can access all your Clipboard\
-    snippets in a few simple clicks.',
+    'Whether you\'re on the go, or at your computer, you can access all your Clipboard'
+    + 'snippets in a few simple clicks.',
 };
 
 function AccessSection() {

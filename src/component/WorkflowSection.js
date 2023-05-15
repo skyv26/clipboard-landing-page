@@ -43,8 +43,8 @@ function WorkflowSection() {
         buttonRequired={false}
       />
       <UnorderedList>
-        {workflowList.map(({ CustomImage, title, description }, index) => (
-          <List key={index}>
+        {workflowList.map(({ CustomImage, title, description }) => (
+          <List key={title}>
             <CustomImage />
             <TextDescription
               heading={title}
