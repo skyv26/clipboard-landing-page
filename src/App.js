@@ -8,7 +8,7 @@ import BrandList from './component/BrandList';
 import CTASection from './component/CTASection';
 import Footer from './component/Footer';
 
-const App = () => {
+function App() {
   return (
     <>
       <HeroSection />
@@ -22,6 +22,6 @@ const App = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default App;

@@ -10,7 +10,7 @@ const data = {
   description: "We've got the tools to boost your productivity.",
 };
 
-const WorkflowSection = () => {
+function WorkflowSection() {
   const { heading, description } = data;
 
   const workflowList = [
@@ -45,7 +45,7 @@ const WorkflowSection = () => {
       <UnorderedList>
         {workflowList.map(({ CustomImage, title, description }, index) => (
           <List key={index}>
-            {<CustomImage />}
+            <CustomImage />
             <TextDescription
               heading={title}
               description={description}
@@ -57,6 +57,6 @@ const WorkflowSection = () => {
       </UnorderedList>
     </Box>
   );
-};
+}
 
 export default WorkflowSection;

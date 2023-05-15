@@ -14,19 +14,19 @@ const data = {
 const featureList = [
   {
     title: 'Quick Search',
-    description: 'Easily search your snippets by content, category, web address, application, and more.'
+    description: 'Easily search your snippets by content, category, web address, application, and more.',
   },
   {
     title: 'iCloud Sync',
-    description: 'Instantly saves and syncs snippets across all your devices.'
+    description: 'Instantly saves and syncs snippets across all your devices.',
   },
   {
     title: 'Complete History',
-    description: 'Retrieve any snippets from the first moment you started using the app.'
-  }
+    description: 'Retrieve any snippets from the first moment you started using the app.',
+  },
 ];
 
-const FeatureSection = () => {
+function FeatureSection() {
   const { heading, description } = data;
   return (
     <Box as="section">
@@ -41,13 +41,13 @@ const FeatureSection = () => {
       </Box>
       <UnorderedList>
         {featureList.map((item, index) => (
-            <List key={index}>
-              <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
-            </List>
-          ))}
+          <List key={index}>
+            <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
+          </List>
+        ))}
       </UnorderedList>
     </Box>
   );
-};
+}
 
 export default FeatureSection;

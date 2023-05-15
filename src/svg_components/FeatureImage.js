@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FeatureImage = ({ className }) => {
+function FeatureImage({ className }) {
   return (
     <svg
       viewBox="0 0 752 577"
@@ -238,7 +238,7 @@ const FeatureImage = ({ className }) => {
       </defs>
     </svg>
   );
-};
+}
 
 FeatureImage.defaultProps = {
   className: 'black',

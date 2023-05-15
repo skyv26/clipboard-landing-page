@@ -14,7 +14,7 @@
         "react/react-in-jsx-scope": "off",
         "import/no-unresolved": "off",
         "no-shadow": "off",
-        "react/function-component-definition": ["error", "any"]
+        "react/function-component-definition": ["error"]
 
     },
     "ignorePatterns": [

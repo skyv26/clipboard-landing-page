@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Box } from '@chakra-ui/react';
 import TextDescription from '../HOC/TextDescription';
 
@@ -9,13 +9,13 @@ const data = {
     snippets in a few simple clicks.',
 };
 
-const AccessSection = () => {
+function AccessSection() {
   const { heading, description } = data;
   return (
-    <Box as='section'>
-      <TextDescription heading={heading} description={description} buttonRequired={false} semanticTag='h2' />
+    <Box as="section">
+      <TextDescription heading={heading} description={description} buttonRequired={false} semanticTag="h2" />
     </Box>
   );
-};
+}
 
 export default AccessSection;

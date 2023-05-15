@@ -6,7 +6,7 @@ import IBMIcon from '../svg_components/IBMIcon';
 import MicrosoftIcon from '../svg_components/MicrosoftIcon';
 import VectorGraphics from '../svg_components/VectorGraphics';
 
-const BrandList = () => {
+function BrandList() {
   return (
     <Box>
       <UnorderedList>
@@ -20,6 +20,6 @@ const BrandList = () => {
       </UnorderedList>
     </Box>
   );
-};
+}
 
 export default BrandList;
