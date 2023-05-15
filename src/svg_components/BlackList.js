@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function BlackList({ color }) {
+function BlackLis({ color }) {
   return (
     <svg viewBox="0 0 44 40" xmlns="http://www.w3.org/2000/svg">
       <g fill={`${color && (color.length !== 0) ? color : '#9EABB2'}`} fillRule="nonzero">

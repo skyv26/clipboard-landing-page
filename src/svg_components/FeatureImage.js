@@ -16,7 +16,6 @@ function FeatureImage({ className }) {
           y="463"
           width="248"
           height="114"
-          viewBox="0 0 248 114"
           fill="url(#pattern0)"
         />
         <rect
@@ -24,7 +23,6 @@ function FeatureImage({ className }) {
           y="5"
           width="752"
           height="458"
-          viewBox="0 0 752 458"
           rx="16"
           fill={`${className.length !== 0 ? 'black' : className}`}
         />
