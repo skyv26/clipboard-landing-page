@@ -8,6 +8,7 @@ const data = {
 };
 
 const CTASection = () => {
+  const { heading, description } = data;
   return (
     <Box as="header">
       <TextDescription heading={heading} description={description} />
