@@ -6,6 +6,7 @@ import AccessSection from './component/AccessSection';
 import WorkflowSection from './component/WorkflowSection';
 import BrandList from './component/BrandList';
 import CTASection from './component/CTASection';
+import Footer from './component/Footer';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <BrandList />
         <CTASection />
       </Box>
+      <Footer />
     </>
   );
 };
