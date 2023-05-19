@@ -9,7 +9,7 @@ import TwitterIcon from '../svg_components/TwitterIcon';
 
 function Footer() {
   return (
-    <Box as="footer" padding={['16px']}>
+    <Box as="footer" padding={['16px']} fontWeight={[400]} color="primary.900">
       <Logo />
       <Grid>
         <GridItem>
