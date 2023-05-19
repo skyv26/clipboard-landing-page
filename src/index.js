@@ -29,6 +29,12 @@ const theme = extendTheme({
     secondary: {
       900: 'hsla(201, 11%, 66%, 1)',
     },
+    buttonPrimary: {
+      900: 'hsl(171, 66%, 44%)',
+    },
+    buttonSecondary: {
+      900: 'hsl(233, 100%, 69%)',
+    },
   },
 });
 
