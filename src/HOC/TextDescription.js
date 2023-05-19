@@ -7,10 +7,10 @@ const TextDescription = ({
   headingWeight, descriptionWeight, buttonWeight,
 }) => (
   <>
-    <Text fontWeight={headingWeight} as={semanticTag}>{ heading }</Text>
-    <Text fontWeight={descriptionWeight} as="p">{ description }</Text>
+    <Text fontWeight={headingWeight} as={semanticTag} color="primary.900">{ heading }</Text>
+    <Text fontWeight={descriptionWeight} as="p" color="secondary.900">{ description }</Text>
     { buttonRequired && (
-      <Box>
+      <Box color="white">
         <CallToActionButton fontWeight={buttonWeight}>
           Download for iOS
         </CallToActionButton>
