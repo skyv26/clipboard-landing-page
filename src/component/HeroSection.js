@@ -13,7 +13,13 @@ function HeroSection() {
   return (
     <Box as="header" padding={['16px']}>
       <Logo w={['100px', '125px']} h={['100px', '125px']} />
-      <TextDescription heading={heading} description={description} />
+      <TextDescription
+        heading={heading}
+        description={description}
+        headingWeight={600}
+        descriptionWeight={400}
+        buttonWeight={600}
+      />
     </Box>
   );
 }
