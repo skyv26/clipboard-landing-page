@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Box } from '@chakra-ui/react';
+import MobileMockup from '../svg_components/MobileMockup';
 import TextDescription from '../HOC/TextDescription';
 
 const data = {
@@ -23,6 +24,9 @@ function AccessSection() {
         buttonRequired={false}
         semanticTag="h2"
       />
+      <Box>
+        <MobileMockup w={['75.86px']} h={['154.93px']} />
+      </Box>
     </Flex>
   );
 }
