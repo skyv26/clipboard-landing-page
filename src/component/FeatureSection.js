@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, UnorderedList, List } from '@chakra-ui/react';
+import { Flex, UnorderedList, List } from '@chakra-ui/react';
 import TextDescription from '../HOC/TextDescription';
 import FeatureImage from '../svg_components/FeatureImage';
 
@@ -29,24 +29,36 @@ const featureList = [
 function FeatureSection() {
   const { heading, description } = data;
   return (
-    <Box as="section" padding={['16px']}>
+    <Flex as="section" textAlign={['center']} padding={['16px']} flexDirection={['column']} pt={[24]} gap={['13px']}>
       <TextDescription
         heading={heading}
         description={description}
+        headingSize={[28]}
+        headingWeight={[600]}
+        descriptionSize={[13]}
         semanticTag="h2"
         buttonRequired={false}
       />
-      <Box>
-        <FeatureImage />
-      </Box>
-      <UnorderedList>
-        {featureList.map((item) => (
-          <List key={item.title}>
-            <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
-          </List>
-        ))}
-      </UnorderedList>
-    </Box>
+      <Flex flexDirection={['column']} alignItems={['center']} gap={['35px']}>
+        <FeatureImage mt={['35px']} />
+        <UnorderedList display={['flex']} flexDirection={['column']} alignItems={['center']} w={['full']} textAlign={['center']} m={['auto']} gap={[6]}>
+          {featureList.map((item) => (
+            <List key={item.title}>
+              <TextDescription
+                heading={item.title}
+                description={item.description}
+                semanticTag="h3"
+                headingSize={['20px']}
+                descriptionSize={['13px']}
+                headingWeight={600}
+                descriptionWeight={400}
+                buttonRequired={false}
+              />
+            </List>
+          ))}
+        </UnorderedList>
+      </Flex>
+    </Flex>
   );
 }
 
