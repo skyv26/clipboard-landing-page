@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, UnorderedList, List } from '@chakra-ui/react';
+import { Flex, UnorderedList, ListItem } from '@chakra-ui/react';
 import TextDescription from '../HOC/TextDescription';
 import FeatureImage from '../svg_components/FeatureImage';
 
@@ -43,7 +43,7 @@ function FeatureSection() {
         <FeatureImage mt={['35px']} />
         <UnorderedList display={['flex']} flexDirection={['column']} alignItems={['center']} w={['full']} textAlign={['center']} m={['auto']} gap={[6]}>
           {featureList.map((item) => (
-            <List key={item.title}>
+            <ListItem key={item.title} display={['flex']} flexDirection={['column']} gap={['10px']}>
               <TextDescription
                 heading={item.title}
                 description={item.description}
@@ -54,7 +54,7 @@ function FeatureSection() {
                 descriptionWeight={400}
                 buttonRequired={false}
               />
-            </List>
+            </ListItem>
           ))}
         </UnorderedList>
       </Flex>
