@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flex, Box } from '@chakra-ui/react';
 import MobileMockup from '../svg_components/MobileMockup';
+import TabletMockup from '../svg_components/TabletMockup';
 import TextDescription from '../HOC/TextDescription';
 
 const data = {
@@ -13,7 +14,7 @@ const data = {
 function AccessSection() {
   const { heading, description } = data;
   return (
-    <Flex as="section" textAlign={['center']} padding={['16px']} flexDirection={['column']} pt={[24]} gap={['13px']}>
+    <Flex as="section" textAlign={['center']} padding={['16px']} flexDirection={['column']} pt={[24]} alignItems={['center']} gap={['13px']}>
       <TextDescription
         heading={heading}
         description={description}
@@ -24,9 +25,15 @@ function AccessSection() {
         buttonRequired={false}
         semanticTag="h2"
       />
-      <Box>
-        <MobileMockup w={['75.86px']} h={['154.93px']} />
-      </Box>
+      <Flex justifyContent={['flex-end']}>
+        <Flex w={['max-content']} position={['relative']} transform={['translateX(5%)']}>
+          <MobileMockup w={['62px']} h={['154.93px']} source="abc" />
+          {/* <MobileMockup
+            w={['55.86px', '75.86px']} h={['154.93px', '154.93px']} source="abc" /> */}
+          <TabletMockup w={['250px']} h={['150px']} source="abc" />
+          {/* <TabletMockup w={['220px', '271.02px']} h={['150px', '180.56px']} source="abc" /> */}
+        </Flex>
+      </Flex>
     </Flex>
   );
 }
