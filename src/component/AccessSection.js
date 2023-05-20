@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import MobileMockup from '../svg_components/MobileMockup';
 import TabletMockup from '../svg_components/TabletMockup';
 import TextDescription from '../HOC/TextDescription';
