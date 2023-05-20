@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, Flex } from '@chakra-ui/react';
 import MobileTabletIcon from '../assets/mobile_tablet.png';
-import TestGif from '../assets/test.gif';
+import GoViral from '../assets/GoViral_Wordpress.png';
 
 const TabletMockup = ({ w, h, color }) => (
   <Flex alignItems={['center']} position={['relative']}>
@@ -105,8 +105,8 @@ const TabletMockup = ({ w, h, color }) => (
       left={['50%']}
       transform={['translate(-50%,-50%)']}
     />
-    <Flex position={['absolute']} width={['calc(100% - 4rem)']} left={['50%']} transform={['translateX(-50%)']} height={['calc(100% - 0.75rem)']} borderRadius={['1px']}>
-      <Image src={TestGif} />
+    <Flex position={['absolute']} width={['calc(100% - 4.05rem)']} left={['50%']} transform={['translateX(-50%)']} height={['calc(100% - 0.75rem)']} borderRadius={['1px']} overflow={['hidden']}>
+      <Image src={GoViral} width={['full']} />
     </Flex>
   </Flex>
 );

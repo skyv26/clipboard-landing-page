@@ -2,7 +2,8 @@ import React from 'react';
 import { Image, Flex, Box } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import MobileTabletIcon from '../assets/mobile_tablet.png';
-import TestGif from '../assets/test.gif';
+// import TestGif from '../assets/test.gif';
+import MobileViral from '../assets/mobileViral.png';
 
 const MobileMockup = ({ w, h, color }) => (
   <Box position={['absolute']} zIndex={['100']} bottom={['0']} transform={['translateX(-22%)']}>
@@ -188,7 +189,7 @@ const MobileMockup = ({ w, h, color }) => (
         transform={['translateX(-50%)']}
       />
       <Flex position={['absolute']} width={['calc(100% - 5px)']} left={['50%']} transform={['translateX(-50%)']} height={['calc(100% - 53px)']} borderRadius={['1px']}>
-        <Image src={TestGif} />
+        <Image src={MobileViral} />
       </Flex>
     </Flex>
   </Box>
