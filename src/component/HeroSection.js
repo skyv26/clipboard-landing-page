@@ -12,7 +12,7 @@ const data = {
 function HeroSection() {
   const { heading, description } = data;
   return (
-    <Flex as="header" padding={['18px']} pt={[24]} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} alignItems={['center']} textAlign={['center']}>
+    <Flex as="header" padding={['18px']} pt={[24]} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
       <Logo w={['100px', '125px']} h={['100px', '125px']} />
       <Flex flexDirection={['column']} gap={[3]} mt={['32px']}>
         <TextDescription
