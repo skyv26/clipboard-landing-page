@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function Logo({ w, h }) {
   return (
-    <Image as="svg" w={w} h={h} viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
+    <Image as="svg" width={w} height={h} viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
       <g stroke="#26BBA4" strokeWidth="10" fill="none" fillRule="evenodd">
         <circle cx="62.5" cy="62.5" r="57.5" />
         <path
