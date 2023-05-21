@@ -40,7 +40,7 @@ function FeatureSection() {
         buttonRequired={false}
       />
       <Flex flexDirection={['column']} alignItems={['center']} gap={['35px']}>
-        <FeatureImage mt={['35px']} />
+        <FeatureImage mt={['35px']} w={['full']} h={['auto']} play />
         <UnorderedList display={['flex']} flexDirection={['column']} alignItems={['center']} w={['full']} textAlign={['center']} m={['auto']} gap={[6]}>
           {featureList.map((item) => (
             <ListItem key={item.title} display={['flex']} flexDirection={['column']} gap={['10px']}>
