@@ -27,10 +27,10 @@ function AccessSection() {
       />
       <Flex justifyContent={['flex-end']}>
         <Flex w={['max-content']} position={['relative']} transform={['translateX(5%)']}>
-          <MobileMockup w={['62px']} h={['154.93px']} source="abc" />
+          <MobileMockup w={['62px']} h={['154.93px']} play />
           {/* <MobileMockup
             w={['55.86px', '75.86px']} h={['154.93px', '154.93px']} source="abc" /> */}
-          <TabletMockup w={['250px']} h={['150px']} source="abc" />
+          <TabletMockup w={['250px']} h={['150px']} play />
           {/* <TabletMockup w={['220px', '271.02px']} h={['150px', '180.56px']} source="abc" /> */}
         </Flex>
       </Flex>
