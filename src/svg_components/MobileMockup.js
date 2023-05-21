@@ -5,9 +5,19 @@ import MobileTabletIcon from '../assets/mobile_tablet.png';
 // import TestGif from '../assets/test.gif';
 import MobileViral from '../assets/mobileViral.png';
 
-const MobileMockup = ({ w, h, color }) => (
-  <Box position={['absolute']} zIndex={['100']} bottom={['0']} transform={['translateX(-22%)']}>
-    <Flex position={['relative']} alignItems={['center']} left={['50%']} transform={['translate(-50%,9%)']}>
+const MobileMockup = ({ w, h, color, play }) => (
+  <Box
+    position={['absolute']}
+    zIndex={['100']}
+    bottom={['0']}
+    transform={['translateX(-22%)']}
+  >
+    <Flex
+      position={['relative']}
+      alignItems={['center']}
+      left={['50%']}
+      transform={['translate(-50%,9%)']}
+    >
       <Image
         as="svg"
         width={w}
@@ -183,13 +193,31 @@ const MobileMockup = ({ w, h, color }) => (
       <Image
         src={MobileTabletIcon}
         w={['35px']}
+        boxShadow={['0px 10px 20px 0px hsla(0, 0%, 0%, 0.3)']}
         position={['absolute']}
         left={['50%']}
-        zIndex={['150']}
+        zIndex={['200']}
         transform={['translateX(-50%)']}
       />
-      <Flex position={['absolute']} width={['calc(100% - 5px)']} left={['50%']} transform={['translateX(-50%)']} height={['calc(100% - 53px)']} borderRadius={['1px']}>
-        <Image src={MobileViral} />
+      <Flex
+        position={['absolute']}
+        width={['calc(100% - 5px)']}
+        left={['50%']}
+        transform={['translateX(-50%)']}
+        height={['calc(100% - 53px)']}
+        borderRadius={['1px']}
+        zIndex={['150']}
+      >
+        {!play ? (
+          <Image src={MobileViral} />
+        ) : (
+          <Box
+            as="iframe"
+            w={['full']}
+            src="https://www.youtube.com/embed/R_CD6ellkyk?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=R_CD6ellkyk"
+            title="YouTube video player"
+          />
+        )}
       </Flex>
     </Flex>
   </Box>
@@ -199,12 +227,14 @@ MobileMockup.defaultProps = {
   w: '',
   h: '',
   color: '',
+  play: false,
 };
 
 MobileMockup.propTypes = {
   w: PropTypes.string,
   h: PropTypes.string,
   color: PropTypes.string,
+  play: PropTypes.bool,
 };
 
 export default MobileMockup;
