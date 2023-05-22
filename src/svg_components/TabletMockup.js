@@ -114,6 +114,8 @@ const TabletMockup = ({w, h, color, play }) => (
           as="iframe"
           width={['full']}
           transform={['scale(1.6)']}
+          pointerEvents={['none']}
+          frameBorder={['0']}
           src="https://www.youtube.com/embed/3Q8u7nKKSiY?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=3Q8u7nKKSiY&rel=0"
           title="YouTube video player"
           allowfullscreen

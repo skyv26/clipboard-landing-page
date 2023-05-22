@@ -214,6 +214,8 @@ const MobileMockup = ({ w, h, color, play }) => (
           <Box
             as="iframe"
             w={['full']}
+            pointerEvents={['none']}
+            frameBorder={['0']}
             src="https://www.youtube.com/embed/R_CD6ellkyk?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=R_CD6ellkyk"
             title="YouTube video player"
           />

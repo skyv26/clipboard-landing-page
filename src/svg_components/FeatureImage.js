@@ -262,8 +262,10 @@ function FeatureImage({
           h={['calc(100% - 90px)', 'calc(100% - 6.75rem)']}
           position={['absolute']}
           left={['50%']}
+          pointerEvents={['none']}
+          frameBorder={['0']}
           top={['50%']}
-          src="https://www.youtube.com/embed/DEmO758Llbc?version=3&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=DEmO758Llbc"
+          src="https://www.youtube.com/embed/DEmO758Llbc?version=3&modestbranding=1&autohide=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=DEmO758Llbc"
           title="YouTube video player"
           transform={['translate(-50%, -50%)', 'translate(-50%, -53%)']}
         />
