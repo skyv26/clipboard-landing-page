@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Flex } from '@chakra-ui/react';
+import { Image, Flex, Box } from '@chakra-ui/react';
 import MobileTabletIcon from '../assets/mobile_tablet.png';
 import GoViral from '../assets/GoViral_Wordpress.png';
 
-const TabletMockup = ({ w, h, color }) => (
+const TabletMockup = ({w, h, color, play }) => (
   <Flex alignItems={['center']} position={['relative']}>
     <Image
       as="svg"
@@ -98,15 +98,27 @@ const TabletMockup = ({ w, h, color }) => (
     </Image>
     <Image
       src={MobileTabletIcon}
-      w={['50px', '75.86px']}
+      w={['50px']}
       position={['absolute']}
       zIndex={['50']}
+      boxShadow={['0px 10px 20px 0px hsla(0, 0%, 0%, 0.3)']}
       top={['50%']}
       left={['50%']}
       transform={['translate(-50%,-50%)']}
     />
     <Flex position={['absolute']} width={['calc(100% - 4.05rem)']} left={['50%']} transform={['translateX(-50%)']} height={['calc(100% - 0.75rem)']} borderRadius={['1px']} overflow={['hidden']}>
-      <Image src={GoViral} width={['full']} />
+      {!play ? (
+        <Image src={GoViral} width={['full']} />
+      ) : (
+        <Box
+          as="iframe"
+          width={['full']}
+          transform={['scale(1.6)']}
+          src="https://www.youtube.com/embed/3Q8u7nKKSiY?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&playlist=3Q8u7nKKSiY&rel=0"
+          title="YouTube video player"
+          allowfullscreen
+        />
+      )}
     </Flex>
   </Flex>
 );
@@ -115,12 +127,14 @@ TabletMockup.defaultProps = {
   w: '',
   h: '',
   color: '',
+  play: false,
 };
 
 TabletMockup.propTypes = {
   w: PropTypes.string,
   h: PropTypes.string,
   color: PropTypes.string,
+  play: PropTypes.bool,
 };
 
 export default TabletMockup;
