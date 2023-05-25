@@ -12,14 +12,14 @@ const data = {
 function HeroSection() {
   const { heading, description } = data;
   return (
-    <Flex as="header" padding={['18px']} pt={[24]} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
+    <Flex as="header" padding={{ base: '18px', sm: '36px' }} pt={{ base: 24, xs: 32, sm: 36 }} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
       <Logo w={['100px', '125px']} h={['100px', '125px']} />
       <Flex flexDirection={['column']} gap={[3]} mt={['32px']}>
         <TextDescription
           heading={heading}
           description={description}
-          headingSize={['24px']}
-          descriptionSize={['13px']}
+          headingSize={{ base: '24px', xs: '32px' }}
+          descriptionSize={{ base: '13px', xs: '16px' }}
           headingWeight={600}
           descriptionWeight={400}
           buttonWeight={600}
