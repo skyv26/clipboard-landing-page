@@ -8,10 +8,10 @@ const TextDescription = ({
   headingSize, descriptionSize,
 }) => (
   <>
-    <Text fontWeight={headingWeight} as={semanticTag} color="primary.900" fontSize={[headingSize]}>{ heading }</Text>
-    <Text fontWeight={descriptionWeight} as="p" color="secondary.900" fontSize={[descriptionSize]}>{ description }</Text>
+    <Text fontWeight={headingWeight} as={semanticTag} color="primary.900" fontSize={headingSize}>{ heading }</Text>
+    <Text fontWeight={descriptionWeight} as="p" color="secondary.900" fontSize={descriptionSize} letterSpacing={['0.12px']}>{ description }</Text>
     { buttonRequired && (
-      <Flex color="white" w={['full']} mt={[6]} flexDirection={['column']} gap={[3]}>
+      <Flex color="white" fontSize={{ xs: '18px' }} w={['full']} mt={[6]} flexDirection={['column']} gap={{base: 3, xs: 5}}>
         <CallToActionButton fontWeight={buttonWeight} bgColor="buttonPrimary.900" py={['13px']} px={['50px']} borderRadius={['full']} boxShadow={['0 10px 20px 0px hsla(160, 64%, 72%, 0.5), 0px -3px 0px 0px hsla(0, 0%, 0%, 0.15) inset']}>
           Download for iOS
         </CallToActionButton>
