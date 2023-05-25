@@ -26,7 +26,7 @@ const featureList = [
   },
 ];
 
-function FeatureSection() {
+const FeatureSection = () => {
   const { heading, description } = data;
   return (
     <Flex as="section" textAlign={['center']} padding={['16px']} flexDirection={['column']} pt={[24]} gap={['13px']}>
@@ -40,7 +40,7 @@ function FeatureSection() {
         buttonRequired={false}
       />
       <Flex flexDirection={['column']} alignItems={['center']} gap={['35px']}>
-        <FeatureImage mt={['35px']} w={['full']} h={['auto']} play />
+        <FeatureImage mt={['35px']} w={['full']} h={['auto']} />
         <UnorderedList display={['flex']} flexDirection={['column']} alignItems={['center']} w={['full']} textAlign={['center']} m={['auto']} gap={[6]}>
           {featureList.map((item) => (
             <ListItem key={item.title} display={['flex']} flexDirection={['column']} gap={['10px']}>
@@ -60,6 +60,6 @@ function FeatureSection() {
       </Flex>
     </Flex>
   );
-}
+};
 
 export default FeatureSection;
