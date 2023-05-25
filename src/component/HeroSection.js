@@ -9,17 +9,17 @@ const data = {
   description: 'Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.',
 };
 
-function HeroSection() {
+const HeroSection = () => {
   const { heading, description } = data;
   return (
-    <Flex as="header" padding={{ base: '18px', sm: '36px' }} pt={{ base: 24, xs: 32, sm: 36 }} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
+    <Flex as="header" padding={{ base: '18px', sm: '36px' }} pt={{ base: 24, xs: 28, sm: 36 }} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
       <Logo w={['100px', '125px']} h={['100px', '125px']} />
       <Flex flexDirection={['column']} gap={[3]} mt={['32px']}>
         <TextDescription
           heading={heading}
           description={description}
-          headingSize={{ base: '24px', xs: '32px' }}
-          descriptionSize={{ base: '13px', xs: '16px' }}
+          headingSize={{ base: '24px', xs: '30px', sm: '34px' }}
+          descriptionSize={{ base: '13px', xs: '16px', sm: '18.5px' }}
           headingWeight={600}
           descriptionWeight={400}
           buttonWeight={600}
@@ -27,6 +27,6 @@ function HeroSection() {
       </Flex>
     </Flex>
   );
-}
+};
 
 export default HeroSection;
