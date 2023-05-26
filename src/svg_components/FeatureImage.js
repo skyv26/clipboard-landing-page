@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import DesktopWhiteSheet from '../assets/DekstopWhite.png';
 
 function FeatureImage({
-  w, h, mt, color, play,
+  w, h, color, play,
 }) {
   return (
     <Flex position={['relative']}>
@@ -14,7 +14,6 @@ function FeatureImage({
         width={w}
         height={h}
         viewBox="0 0 752 577"
-        marginTop={mt}
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         fill="none"
@@ -248,36 +247,35 @@ function FeatureImage({
       { !play ? (
         <Image
           w={['calc(100% - 16px)', 'calc(100% - 1.5rem)']}
-          h={['calc(100% - 90px)', 'calc(100% - 6.75rem)']}
           src={DesktopMockupImage}
           position={['absolute']}
           left={['50%']}
-          top={['50%']}
-          transform={['translate(-50%, -50%)', 'translate(-50%, -53%)']}
+          top={{ base: '20%' }}
+          transform={{ base: 'translate(-50%, -20%)' }}
         />
       ) : (
         <Box
           as="iframe"
           w={['calc(100% - 16px)', 'calc(100% - 1.5rem)']}
-          h={['calc(100% - 90px)', 'calc(100% - 6.75rem)']}
+          h={['calc(100% - 73px)']}
           position={['absolute']}
           left={['50%']}
           pointerEvents={['none']}
           frameBorder={['0']}
-          top={['50%']}
           src="https://www.youtube.com/embed/DEmO758Llbc?version=3&modestbranding=1&autohide=1&autoplay=1&mute=1&loop=1&controls=0&showinfo=0&playlist=DEmO758Llbc"
           title="YouTube video player"
-          transform={['translate(-50%, -50%)', 'translate(-50%, -53%)']}
+          top={{ base: '20%' }}
+          transform={{ base: 'translate(-50%, -20%)' }}
         />
       )}
       <Image
         src={DesktopWhiteSheet}
-        w={['75px', '100px']}
+        w={{ base: '75px', xs: '120px', sm: '140px' }}
         position={['absolute']}
-        top={['50%']}
+        top={{ base: '35%' }}
         left={['50%']}
         boxShadow={['0px 10px 20px 0px hsla(0, 0%, 0%, 0.3)']}
-        transform={['translate(-50%,-50%)', 'translate(-50%,-54%)']}
+        transform={{ base: 'translate(-50%,-35%)' }}
       />
     </Flex>
   );
@@ -286,7 +284,6 @@ function FeatureImage({
 FeatureImage.defaultProps = {
   w: '',
   h: '',
-  mt: '',
   color: 'black',
   play: false,
 };
@@ -294,7 +291,6 @@ FeatureImage.defaultProps = {
 FeatureImage.propTypes = {
   w: PropTypes.string,
   h: PropTypes.string,
-  mt: PropTypes.string,
   color: PropTypes.string,
   play: PropTypes.bool,
 };
