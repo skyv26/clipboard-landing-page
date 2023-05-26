@@ -5,12 +5,14 @@ import MobileTabletIcon from '../assets/mobile_tablet.png';
 // import TestGif from '../assets/test.gif';
 import MobileViral from '../assets/mobileViral.png';
 
-const MobileMockup = ({ w, h, color, play }) => (
+const MobileMockup = ({
+  w, h, color, play,
+}) => (
   <Box
     position={['absolute']}
     zIndex={['100']}
     bottom={['0']}
-    transform={['translateX(-22%)']}
+    transform={{ base: 'translateX(-22%)', xs: 'translateX(-20%)' }}
   >
     <Flex
       position={['relative']}
