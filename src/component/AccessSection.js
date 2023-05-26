@@ -14,24 +14,21 @@ const data = {
 const AccessSection = () => {
   const { heading, description } = data;
   return (
-    <Flex as="section" textAlign={['center']} padding={['16px']} flexDirection={['column']} pt={[24]} alignItems={['center']} gap={['13px']}>
+    <Flex as="section" textAlign={['center']} padding={{ base: '16px', xs: '18px', sm: '36px' }} flexDirection={['column']} paddingTop={{ base: 24, xs: 36, sm: 40 }} gap={{ base: 12, xs: 16 }} alignItems={{ base: 'center' }}>
       <TextDescription
         heading={heading}
         description={description}
-        headingSize={['20px']}
-        descriptionSize={['13px']}
-        headingWeight={600}
-        descriptionWeight={400}
+        headingSize={{ base: '20px', xs: '26px', sm: '28px' }}
+        descriptionSize={{ base: '14px', xs: '16px', sm: '18px' }}
+        headingWeight={[600]}
+        descriptionWeight={{ base: 400 }}
         buttonRequired={false}
         semanticTag="h2"
       />
       <Flex justifyContent={['flex-end']}>
-        <Flex w={['max-content']} position={['relative']} transform={['translateX(5%)']}>
-          <MobileMockup w={['62px']} h={['154.93px']} />
-          {/* <MobileMockup
-            w={['55.86px', '75.86px']} h={['154.93px', '154.93px']} source="abc" /> */}
-          <TabletMockup w={['250px']} h={['150px']} />
-          {/* <TabletMockup w={['220px', '271.02px']} h={['150px', '180.56px']} source="abc" /> */}
+        <Flex w={['max-content']} position={['relative']} transform={{ base: 'translateX(5%) scale(1)', xs: 'translateX(5%) scale(1.05)', sm: 'translateX(5%) scale(1.25)' }}>
+          <MobileMockup w={{ base: '62px' }} h={{ base: '154.93px' }} />
+          <TabletMockup w={{ base: '250px' }} h={{ base: '150px' }} />
         </Flex>
       </Flex>
     </Flex>
