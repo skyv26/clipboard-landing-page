@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image, Flex, Box } from '@chakra-ui/react';
 import DesktopMockupImage from '../assets/desktopMockupImage.png';
-import PropTypes from 'prop-types';
 import DesktopWhiteSheet from '../assets/DekstopWhite.png';
 
 function FeatureImage({
