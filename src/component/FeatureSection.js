@@ -37,6 +37,7 @@ const FeatureSection = () => {
           headingSize={{ base: 28 }}
           headingWeight={[600]}
           descriptionSize={{ base: 13, xs: 16 }}
+          descriptionWeight={{ base: 400 }}
           semanticTag="h2"
           buttonRequired={false}
         />
