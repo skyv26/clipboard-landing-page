@@ -4,7 +4,9 @@ import { Image, Flex, Box } from '@chakra-ui/react';
 import MobileTabletIcon from '../assets/mobile_tablet.png';
 import GoViral from '../assets/GoViral_Wordpress.png';
 
-const TabletMockup = ({w, h, color, play }) => (
+const TabletMockup = ({
+  w, h, color, play,
+}) => (
   <Flex alignItems={['center']} position={['relative']}>
     <Image
       as="svg"
