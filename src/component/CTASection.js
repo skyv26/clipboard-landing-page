@@ -13,8 +13,8 @@ const CTASection = () => {
     <Flex
       as="section"
       flexDirection={['column']}
-      padding={['16px']}
-      pt={['104px']}
+      padding={{ base: '18px', sm: '36px' }}
+      pt={{ base: 24, xs: 28, sm: 36 }}
       alignItems={['center']}
       textAlign={['center']}
       gap={[3]}
@@ -23,8 +23,8 @@ const CTASection = () => {
       <TextDescription
         heading={heading}
         description={description}
-        headingSize={['24px']}
-        descriptionSize={['13px']}
+        headingSize={{ base: '24px', xs: '30px', sm: '34px' }}
+        descriptionSize={{ base: '13px', xs: '17px', sm: '18.5px' }}
         headingWeight={600}
         descriptionWeight={400}
         buttonWeight={600}
