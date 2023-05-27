@@ -15,16 +15,18 @@ const AccessSection = () => {
   const { heading, description } = data;
   return (
     <Flex as="section" textAlign={['center']} padding={{ base: '16px', xs: '18px', sm: '36px' }} flexDirection={['column']} paddingTop={{ base: 24, xs: 36, sm: 40 }} gap={{ base: 12, xs: 16 }} alignItems={{ base: 'center' }}>
-      <TextDescription
-        heading={heading}
-        description={description}
-        headingSize={{ base: '20px', xs: '26px', sm: '28px' }}
-        descriptionSize={{ base: '14px', xs: '16px', sm: '18px' }}
-        headingWeight={[600]}
-        descriptionWeight={{ base: 400 }}
-        buttonRequired={false}
-        semanticTag="h2"
-      />
+      <Flex flexDirection={['column']} gap={[3]} mt={{ base: '32px', xs: '50px', sm: '64px' }}>
+        <TextDescription
+          heading={heading}
+          description={description}
+          headingSize={{ base: '20px', xs: '26px', sm: '28px' }}
+          descriptionSize={{ base: '14px', xs: '16px', sm: '18px' }}
+          headingWeight={[600]}
+          descriptionWeight={{ base: 400 }}
+          buttonRequired={false}
+          semanticTag="h2"
+        />
+      </Flex>
       <Flex justifyContent={['flex-end']}>
         <Flex w={['max-content']} position={['relative']} transform={{ base: 'translateX(5%) scale(1)', xs: 'translateX(5%) scale(1.05)', sm: 'translateX(5%) scale(1.25)' }}>
           <MobileMockup w={{ base: '62px' }} h={{ base: '154.93px' }} />
