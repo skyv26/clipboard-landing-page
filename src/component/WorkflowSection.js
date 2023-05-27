@@ -39,31 +39,33 @@ function WorkflowSection() {
       as="section"
       textAlign={['center']}
       flexDirection={['column']}
-      padding={['16px']}
-      pt={[24]}
+      padding={{ base: '16px', xs: '18px', sm: '36px' }}
+      paddingTop={{ base: 24, xs: 36, sm: 40 }}
       alignItems={['center']}
       gap={['13px']}
     >
-      <TextDescription
-        heading={heading}
-        description={description}
-        headingSize={['20px']}
-        descriptionSize={['13px']}
-        headingWeight={600}
-        descriptionWeight={400}
-        semanticTag="h2"
-        buttonRequired={false}
-      />
-      <UnorderedList w={['full']} margin={['auto']} display={['flex']} flexDirection={['column']} alignItems={['center']} gap={['40px']} pt={['70px']}>
+      <Flex flexDirection={['column']} gap={[3]} mt={{ base: '32px', xs: '50px', sm: '64px' }}>
+        <TextDescription
+          heading={heading}
+          description={description}
+          headingSize={{ base: '20px', xs: '26px', sm: '28px' }}
+          descriptionSize={{ base: '14px', xs: '16px', sm: '18px' }}
+          headingWeight={600}
+          descriptionWeight={400}
+          semanticTag="h2"
+          buttonRequired={false}
+        />
+      </Flex>
+      <UnorderedList w={['full']} margin={['auto']} display={['flex']} flexDirection={['column']} alignItems={['center']} gap={{ base: '40px', xs: '48px', sm: '56px' }} pt={['70px']}>
         {workflowList.map(({ CustomImage, title, description }) => (
-          <ListItem display={['flex']} flexDirection={['column']} alignItems={['center']} key={title} gap={['30px']}>
+          <ListItem display={['flex']} flexDirection={['column']} alignItems={['center']} key={title} gap={{ base: '30px', xs: '38px', sm: '44px' }}>
             <CustomImage w={['44px']} h={['40px']} />
             <Flex flexDirection={['column']} alignItems={['center']} gap={['14px']}>
               <TextDescription
                 heading={title}
                 description={description}
-                headingSize={['18px']}
-                descriptionSize={['12px']}
+                headingSize={{ base: '18px', xs: '24px', sm: '26px' }}
+                descriptionSize={{ base: '12px', xs: '16px', sm: '18px' }}
                 headingWeight={600}
                 descriptionWeight={400}
                 semanticTag="h3"
