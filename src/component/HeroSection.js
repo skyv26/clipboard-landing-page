@@ -12,7 +12,17 @@ const data = {
 const HeroSection = () => {
   const { heading, description } = data;
   return (
-    <Flex as="header" padding={{ base: '18px', sm: '36px' }} pt={{ base: 24, xs: 28, sm: 36 }} flexDirection={['column']} bgImage={[MobileHeaderBg]} bgRepeat={['no-repeat']} bgSize={['cover']} alignItems={['center']} textAlign={['center']}>
+    <Flex
+      as="header"
+      padding={{ base: '18px', sm: '36px' }}
+      pt={{ base: 24, xs: 28, sm: 36 }}
+      flexDirection={['column']}
+      bgImage={[MobileHeaderBg]}
+      bgRepeat={['no-repeat']}
+      bgSize={['cover']}
+      alignItems={['center']}
+      textAlign={['center']}
+    >
       <Logo w={['100px', '125px']} h={['100px', '125px']} />
       <Flex flexDirection={['column']} gap={[3]} mt={{ base: '32px', xs: '50px', sm: '64px' }}>
         <TextDescription
