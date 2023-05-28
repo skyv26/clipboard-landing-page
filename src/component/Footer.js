@@ -21,21 +21,21 @@ function Footer() {
       gap={['40px']}
     >
       <Logo w={['40px', '55px']} h={['40px', '55px']} />
-      <Grid textAlign={['center']} rowGap={['16px']}>
+      <Grid textAlign={['center']} rowGap={['16px', '20px']}>
         <GridItem>
-          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px']}>FAQs</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>FAQs</Link>
         </GridItem>
         <GridItem>
-          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px']}>Contact Us</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Contact Us</Link>
         </GridItem>
         <GridItem>
-          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px']}>Privacy Policy</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Privacy Policy</Link>
         </GridItem>
         <GridItem>
-          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px']}>Press Kit</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Press Kit</Link>
         </GridItem>
         <GridItem>
-          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px']}>Install Guide</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Install Guide</Link>
         </GridItem>
       </Grid>
       <HStack gap={['40px']} mt={['16px']}>
