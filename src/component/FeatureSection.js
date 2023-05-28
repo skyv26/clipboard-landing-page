@@ -34,9 +34,10 @@ const FeatureSection = () => {
         <TextDescription
           heading={heading}
           description={description}
-          headingSize={{ base: 28 }}
+          headingSize={{ base: '24px', xs: '30px', sm: '34px', md: '35px' }}
+          // headingSize={{ base: 28 }}
           headingWeight={[600]}
-          descriptionSize={{ base: 13, xs: 16 }}
+          descriptionSize={{ base: '13px', xs: '17px', sm: '18.5px', md: '20px' }}
           descriptionWeight={{ base: 400 }}
           semanticTag="h2"
           buttonRequired={false}
