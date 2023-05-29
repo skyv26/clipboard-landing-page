@@ -19,8 +19,12 @@ const AccessSection = () => {
         <TextDescription
           heading={heading}
           description={description}
-          headingSize={{ base: '20px', xs: '26px', sm: '28px', md: '35px' }}
-          descriptionSize={{ base: '14px', xs: '16px', sm: '18px', md: '20px' }}
+          headingSize={{
+            base: '20px', xs: '26px', sm: '28px', md: '35px',
+          }}
+          descriptionSize={{
+            base: '14px', xs: '16px', sm: '18px', md: '20px',
+          }}
           headingWeight={[600]}
           descriptionWeight={{ base: 400 }}
           buttonRequired={false}

@@ -23,8 +23,12 @@ const CTASection = () => {
       <TextDescription
         heading={heading}
         description={description}
-        headingSize={{ base: '24px', xs: '30px', sm: '34px', md: '35px' }}
-        descriptionSize={{ base: '13px', xs: '17px', sm: '18.5px', md: '20px' }}
+        headingSize={{
+          base: '24px', xs: '30px', sm: '34px', md: '35px',
+        }}
+        descriptionSize={{
+          base: '13px', xs: '17px', sm: '18.5px', md: '20px',
+        }}
         headingWeight={600}
         descriptionWeight={400}
         buttonWeight={600}

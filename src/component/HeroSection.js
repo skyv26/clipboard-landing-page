@@ -34,7 +34,9 @@ const HeroSection = () => {
             sm: '32px',
             md: '35px',
           }}
-          descriptionSize={{ base: '13px', xs: '17px', sm: '18.5px', md: '20px' }}
+          descriptionSize={{
+            base: '13px', xs: '17px', sm: '18.5px', md: '20px',
+          }}
           headingWeight={600}
           descriptionWeight={400}
           buttonWeight={600}
