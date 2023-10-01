@@ -1,3 +1,4 @@
+import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
 import React from 'react'
 
 const CTA = ({ heading, description }) => {

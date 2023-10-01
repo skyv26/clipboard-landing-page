@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Link as CallToActionButton } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import CTA from '../HOC/CTA';
 import Logo from '../svg_components/Logo';
 

@@ -1,5 +1,10 @@
 import React from 'react';
+import HeroSection from './component/HeroSection';
 
-const App = () => <h1>Hello World</h1>;
+const App = () => {
+    return (
+        <HeroSection />
+    );
+};
 
 export default App;
