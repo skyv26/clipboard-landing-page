@@ -1,8 +1,10 @@
 import React from 'react';
+import { Image } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
-function Logo() {
+function Logo({ w, h }) {
   return (
-    <svg viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
+    <Image as="svg" width={w} height={h} viewBox="0 0 125 125" xmlns="http://www.w3.org/2000/svg">
       <g stroke="#26BBA4" strokeWidth="10" fill="none" fillRule="evenodd">
         <circle cx="62.5" cy="62.5" r="57.5" />
         <path
@@ -10,8 +12,18 @@ function Logo() {
           strokeLinecap="round"
         />
       </g>
-    </svg>
+    </Image>
   );
 }
+
+Logo.defaultProps = {
+  w: '128px',
+  h: '128px',
+};
+
+Logo.propTypes = {
+  w: PropTypes.string,
+  h: PropTypes.string,
+};
 
 export default Logo;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, UnorderedList, List } from '@chakra-ui/react';
+import { Flex, UnorderedList, ListItem } from '@chakra-ui/react';
 import TextDescription from '../HOC/TextDescription';
 import FeatureImage from '../svg_components/FeatureImage';
 
@@ -26,28 +26,48 @@ const featureList = [
   },
 ];
 
-function FeatureSection() {
+const FeatureSection = () => {
   const { heading, description } = data;
   return (
-    <Box as="section">
-      <TextDescription
-        heading={heading}
-        description={description}
-        semanticTag="h2"
-        buttonRequired={false}
-      />
-      <Box>
-        <FeatureImage />
-      </Box>
-      <UnorderedList>
-        {featureList.map((item) => (
-          <List key={item.title}>
-            <TextDescription heading={item.title} description={item.description} semanticTag="h3" buttonRequired={false} />
-          </List>
-        ))}
-      </UnorderedList>
-    </Box>
+    <Flex as="section" textAlign={['center']} padding={{ base: '16px', xs: '18px', sm: '36px' }} flexDirection={['column']} paddingTop={{ base: 24, xs: 36, sm: 40 }} gap={{ base: 12, xs: 16 }}>
+      <Flex flexDirection={{ base: 'column' }} gap={{ base: 13, xs: '16px' }}>
+        <TextDescription
+          heading={heading}
+          description={description}
+          headingSize={{
+            base: '24px', xs: '30px', sm: '34px', md: '35px',
+          }}
+          // headingSize={{ base: 28 }}
+          headingWeight={[600]}
+          descriptionSize={{
+            base: '13px', xs: '17px', sm: '18.5px', md: '20px',
+          }}
+          descriptionWeight={{ base: 400 }}
+          semanticTag="h2"
+          buttonRequired={false}
+        />
+      </Flex>
+      <Flex flexDirection={['column']} alignItems={['center']} gap={{ base: '35px', xs: '55px' }}>
+        <FeatureImage mt={['35px']} w={['full']} h={['auto']} />
+        <UnorderedList display={['flex']} flexDirection={['column']} alignItems={['center']} w={['full']} textAlign={['center']} m={['auto']} gap={{ base: 6, xs: 10, sm: 12 }}>
+          {featureList.map((item) => (
+            <ListItem key={item.title} display={['flex']} flexDirection={['column']} gap={['10px']}>
+              <TextDescription
+                heading={item.title}
+                description={item.description}
+                semanticTag="h3"
+                headingSize={{ base: '20px', xs: '24px', sm: '26px' }}
+                descriptionSize={{ base: '13px', xs: '16px', sm: '18px' }}
+                headingWeight={600}
+                descriptionWeight={400}
+                buttonRequired={false}
+              />
+            </ListItem>
+          ))}
+        </UnorderedList>
+      </Flex>
+    </Flex>
   );
-}
+};
 
 export default FeatureSection;

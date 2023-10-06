@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box, Grid, GridItem, Link, HStack,
+  Flex, Grid, GridItem, Link, HStack,
 } from '@chakra-ui/react';
 import Logo from '../svg_components/Logo';
 import FbIcon from '../svg_components/FbIcon';
@@ -9,37 +9,47 @@ import TwitterIcon from '../svg_components/TwitterIcon';
 
 function Footer() {
   return (
-    <Box as="footer">
-      <Logo />
-      <Grid>
+    <Flex
+      as="footer"
+      flexDirection={['column']}
+      padding={['16px']}
+      py={['56px']}
+      fontWeight={[400]}
+      alignItems={['center']}
+      color="primary.900"
+      bgColor={['hsla(180, 11%, 96%, 1)']}
+      gap={['40px']}
+    >
+      <Logo w={['40px', '55px']} h={['40px', '55px']} />
+      <Grid textAlign={['center']} rowGap={['16px', '20px']}>
         <GridItem>
-          <Link href=".">FAQs</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>FAQs</Link>
         </GridItem>
         <GridItem>
-          <Link href=".">Contact Us</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Contact Us</Link>
         </GridItem>
         <GridItem>
-          <Link href=".">Privacy Policy</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Privacy Policy</Link>
         </GridItem>
         <GridItem>
-          <Link href=".">Press Kit</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Press Kit</Link>
         </GridItem>
         <GridItem>
-          <Link href=".">Install Guide</Link>
+          <Link href="." w={['160px']} h={['30px']} color={['hsla(210, 10%, 33%, 1)']} fontSize={['14px', '18px']}>Install Guide</Link>
         </GridItem>
       </Grid>
-      <HStack>
+      <HStack gap={['40px']} mt={['16px']}>
         <Link href=".">
-          <FbIcon />
+          <FbIcon w={['24px']} h={['24px']} color={['hsla(210, 10%, 33%, 1)']} />
         </Link>
         <Link href=".">
-          <InstaIcon />
+          <TwitterIcon w={['24px']} h={['19.5px']} color={['hsla(210, 10%, 33%, 1)']} />
         </Link>
         <Link href=".">
-          <TwitterIcon />
+          <InstaIcon w={['24px']} h={['24px']} color={['hsla(210, 10%, 33%, 1)']} />
         </Link>
       </HStack>
-    </Box>
+    </Flex>
   );
 }
 
